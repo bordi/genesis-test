@@ -75,10 +75,8 @@
         let data = this.data.slice(this.initialRow, this.perPage + this.initialRow);
 
         if (filterQuery) {
-          data = data.filter(function (row) {
-            return Object.keys(row).some(function (key) {
-              return String(row[key]).toLowerCase().indexOf(filterQuery) > -1
-            })
+          data = data.filter((row) => {
+            return Object.keys(row).some((key) => row[key].toLowerCase().search(filterQuery) > -1)
           })
         }
 
