@@ -279,5 +279,6 @@ export default {
     'eye_color': 'black',
     'birth_year': 'unknown',
     'gender': 'male',
-  }]
+  },
+  ],
 }
